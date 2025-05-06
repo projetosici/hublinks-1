@@ -23,7 +23,7 @@ class ProjectHubPage extends StatelessWidget {
     Project(name: 'Dash Oncológico', url: 'https://dashoncologico.streamlit.app/Painel_Oncologico_Pediatrico_(DATASUS)', icon: Icons.pie_chart),
     Project(name: 'Produção Web', url: 'https://producaoiciweb.web.app/', icon: Icons.code),
     Project(name: 'Page Upload ICI', url: 'http://pageuploud.web.app', icon: Icons.cloud_upload),
-    Project(name: 'Page Triagem Oncologia Pediatrica', url: 'https://triagemoncopediatrica.web.app/', icon: Icons.health_and_safety),
+    Project(name: 'Page Triagem Oncologia Pediátrica', url: 'https://triagemoncopediatrica.web.app/', icon: Icons.health_and_safety),
    
   ];
 
