@@ -17,7 +17,7 @@ class ProjectHubApp extends StatelessWidget {
 class ProjectHubPage extends StatelessWidget {
   final List<Project> projects = [
     Project(name: 'App de Registro', url: 'https://sisop-rs.web.app/', icon: Icons.assignment),
-    Project(name: 'Documentação App de Registro', url: 'https://alexvovo.github.io/Documentacao-App-Registro/', icon: Icons.assignment),
+    Project(name: 'Documentação App de Registro', url: 'https://github.com/AlexVovo/Documentacao-App-Registro', icon: Icons.assignment),
     Project(name: 'Dash Satisfação ICI', url: 'https://dashsastifacaoici.streamlit.app/', icon: Icons.insert_chart),
     Project(name: 'Teleoncoped', url: 'https://teleoncoped.ici.ong/', icon: Icons.medical_services),
     Project(name: 'Dash Oncológico', url: 'https://dashoncologico.streamlit.app/Painel_Oncologico_Pediatrico_(DATASUS)', icon: Icons.pie_chart),
