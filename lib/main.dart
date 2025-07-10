@@ -8,6 +8,10 @@ class ProjectHubApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Project ICI-RS',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+      ),
       home: ProjectHubPage(),
       debugShowCheckedModeBanner: false,
     );
@@ -23,7 +27,8 @@ class ProjectHubPage extends StatelessWidget {
     ),
     Project(
       name: 'Documentação App de Registro',
-      url: 'https://github.com/AlexVovo/Documentacao-App-Registro',
+      //url: 'https://github.com/AlexVovo/Documentacao-App-Registro',
+      url: 'https://alexvovo.github.io/Documentacao-App-Registro/',
       icon: Icons.assignment,
     ),
     Project(
@@ -63,26 +68,73 @@ class ProjectHubPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hub de Projetos | ICI-RS'),
-        centerTitle: true,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.hub, size: 28),
+            SizedBox(width: 8),
+            Text('Hub de Projetos | ICI-RS'),
+          ],
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Colors.white,
       ),
-      body: ListView.builder(
-        itemCount: projects.length,
-        itemBuilder: (context, index) {
-          final project = projects[index];
-          return Card(
-            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-            child: ListTile(
-              leading: Icon(
-                project.icon,
-                color: Theme.of(context).primaryColor,
-              ),
-              title: Text(project.name),
-              trailing: Icon(Icons.open_in_new),
-              onTap: () => launchUrl(Uri.parse(project.url)),
-            ),
-          );
-        },
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.grey.shade100],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: SafeArea(
+          child: ListView.builder(
+            padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+            itemCount: projects.length,
+            itemBuilder: (context, index) {
+              final project = projects[index];
+              return Card(
+                elevation: 3,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                margin: EdgeInsets.symmetric(vertical: 8),
+                child: ListTile(
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
+                  leading: CircleAvatar(
+                    backgroundColor: Theme.of(
+                      context,
+                    ).colorScheme.primary.withOpacity(0.1),
+                    child: Icon(
+                      project.icon,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                  title: Text(
+                    project.name,
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
+                  trailing: Icon(Icons.open_in_new),
+                  onTap: () async {
+                    final uri = Uri.parse(project.url);
+                    if (await canLaunchUrl(uri)) {
+                      launchUrl(uri, mode: LaunchMode.externalApplication);
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Não foi possível abrir o link.'),
+                        ),
+                      );
+                    }
+                  },
+                ),
+              );
+            },
+          ),
+        ),
       ),
     );
   }
