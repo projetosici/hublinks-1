@@ -16,15 +16,47 @@ class ProjectHubApp extends StatelessWidget {
 
 class ProjectHubPage extends StatelessWidget {
   final List<Project> projects = [
-    Project(name: 'App de Registro', url: 'https://sisop-rs.web.app/', icon: Icons.assignment),
-    Project(name: 'Documentação App de Registro', url: 'https://github.com/AlexVovo/Documentacao-App-Registro', icon: Icons.assignment),
-    Project(name: 'Dash Satisfação ICI', url: 'https://dashsastifacaoici.streamlit.app/', icon: Icons.insert_chart),
-    Project(name: 'Teleoncoped', url: 'https://teleoncoped.ici.ong/', icon: Icons.medical_services),
-    Project(name: 'Dash Oncológico', url: 'https://dashoncologico.streamlit.app/Painel_Oncologico_Pediatrico_(DATASUS)', icon: Icons.pie_chart),
-    Project(name: 'Produção Web', url: 'https://producaoiciweb.web.app/', icon: Icons.code),
-    Project(name: 'Page Upload ICI', url: 'http://pageuploud.web.app', icon: Icons.cloud_upload),
-    Project(name: 'Page Triagem Oncologia Pediátrica', url: 'https://triagemoncopediatrica.web.app/', icon: Icons.health_and_safety),
-   
+    Project(
+      name: 'App de Registro',
+      url: 'https://sisop-rs.web.app/',
+      icon: Icons.assignment,
+    ),
+    Project(
+      name: 'Documentação App de Registro',
+      url: 'https://github.com/AlexVovo/Documentacao-App-Registro',
+      icon: Icons.assignment,
+    ),
+    Project(
+      name: 'Dash Satisfação ICI',
+      url: 'https://dashsastifacaoici.streamlit.app/',
+      icon: Icons.insert_chart,
+    ),
+    Project(
+      name: 'Teleoncoped',
+      url: 'https://teleoncoped.ici.ong/',
+      icon: Icons.medical_services,
+    ),
+    Project(
+      name: 'Dash Oncológico',
+      url:
+          'https://dashoncologico.streamlit.app/Painel_Oncologico_Pediatrico_(DATASUS)',
+      icon: Icons.pie_chart,
+    ),
+    Project(
+      name: 'Produção Web',
+      url: 'https://producaoiciweb.web.app/',
+      icon: Icons.code,
+    ),
+    Project(
+      name: 'Page Upload ICI',
+      url: 'http://pageuploud.web.app',
+      icon: Icons.cloud_upload,
+    ),
+    Project(
+      name: 'Page Triagem Oncologia Pediátrica',
+      url: 'https://triagemoncopediatrica.web.app/',
+      icon: Icons.health_and_safety,
+    ),
   ];
 
   @override
@@ -41,7 +73,10 @@ class ProjectHubPage extends StatelessWidget {
           return Card(
             margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
             child: ListTile(
-              leading: Icon(project.icon, color: Theme.of(context).primaryColor),
+              leading: Icon(
+                project.icon,
+                color: Theme.of(context).primaryColor,
+              ),
               title: Text(project.name),
               trailing: Icon(Icons.open_in_new),
               onTap: () => launchUrl(Uri.parse(project.url)),
