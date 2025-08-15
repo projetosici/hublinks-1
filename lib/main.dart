@@ -28,7 +28,7 @@ class ProjectHubPage extends StatelessWidget {
     Project(
       name: 'Documentação App de Registro',
       //url: 'https://github.com/AlexVovo/Documentacao-App-Registro',
-      url: 'https://alexvovo.github.io/Documentacao-App-Registro/',
+      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
       icon: Icons.assignment,
     ),
     Project(
