@@ -33,7 +33,8 @@ class ProjectHubPage extends StatelessWidget {
     ),
     Project(
       name: 'Dash Satisfação ICI',
-      url: 'https://dashsastifacaoici.streamlit.app/',
+      url: 'https://dashinterativopy-4kmtzubfe3mgiecgd6xfum.streamlit.app/',
+
       icon: Icons.insert_chart,
     ),
     Project(
