@@ -27,7 +27,7 @@ class ProjectHubPage extends StatelessWidget {
     ),
     Project(
       name: 'Documentação App de Registro',
-      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
+      url: 'https://projetobioinfo-pixel.github.io/documentacaoTriagemOnco/',
 
       icon: Icons.assignment,
     ),
