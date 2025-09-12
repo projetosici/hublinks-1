@@ -32,14 +32,14 @@ class ProjectHubPage extends StatelessWidget {
       icon: Icons.assignment,
     ),
     Project(
-      name: 'Documentação App Triagem',
-      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
+      name: 'Documentação App TriagemOnco',
+      url: 'https://projetobioinfo-pixel.github.io/documentacaoTriagemOnco/',
 
       icon: Icons.assignment,
     ),
     Project(
       name: 'Documentação Teleoncoped',
-      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
+      url: 'https://www.internacional.com.br/',
 
       icon: Icons.assignment,
     ),
