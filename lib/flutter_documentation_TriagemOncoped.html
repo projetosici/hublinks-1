@@ -1,0 +1,164 @@
+<html><head><meta charset='utf-8'><title>Documentação Narrativa - Projeto Triagem</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;padding:30px;line-height:1.6;color:#222}h1,h2,h3{color:#0d47a1}section{margin-bottom:30px}ul{margin-top:0}li{margin-bottom:6px}</style></head><body>
+<h1>📘 Documentação do Projeto Flutter</h1>
+<p>Este documento descreve de forma narrativa a estrutura e funcionamento do projeto Flutter enviado.</p>
+<section><h2>Estrutura Geral</h2><p>O projeto segue a convenção padrão do Flutter, com os arquivos principais dentro da pasta <code>lib/</code>. Cada arquivo contém telas (screens), widgets reutilizáveis ou serviços auxiliares.</p></section>
+<section><h2>Descrição dos Arquivos Principais</h2>
+<h3>lib/firebase_options.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/main.dart</h3><ul>
+<li>Define o widget **MyApp**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Define o widget **GradientBackground**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+</ul>
+<h3>lib/model/Adulto_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/csv.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/patient_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/pergunta_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/questionario_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/resultados_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/model/resultado_model.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/pages/dadosIniciaisPaciente/dadosIniciaisPacientePage.dart</h3><ul>
+<li>Define o widget **DadosIniciaisPacientePage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/formularioPaciente/formularioPacientePage.dart</h3><ul>
+<li>Define o widget **FormularioPacientePage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/gestaoPacientes/gestao.dart</h3><ul>
+<li>Define o widget **GestaoPage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Utiliza **FutureBuilder** para construir a interface baseada em resultados assíncronos (ex.: chamadas a API ou banco local).</li>
+</ul>
+<h3>lib/pages/gestaoPacientes/widgetgestao.dart</h3><ul>
+<li>Define o widget **AdminPage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Utiliza **FutureBuilder** para construir a interface baseada em resultados assíncronos (ex.: chamadas a API ou banco local).</li>
+</ul>
+<h3>lib/pages/home/home.dart</h3><ul>
+<li>Define o widget **SobreProjetoPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Define o widget **CustomButton**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+</ul>
+<h3>lib/pages/home/homepage.dart</h3><ul>
+<li>Define o widget **HomePage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/home/widgethome.dart</h3><ul>
+<li>Define o widget **WidgetHome**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/pages/introduction/introductionPage.dart</h3><ul>
+<li>Define o widget **IntroductionPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/introduction/widgetItroduction.dart</h3><ul>
+<li>Define o widget **Widgetintroduction**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/loginpage/loginpage.dart</h3><ul>
+<li>Define o widget **Loginpage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/loginpage/widgetLogin.dart</h3><ul>
+<li>Define o widget **Widgetlogin**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageAdulto/AdultoFinalpage.dart</h3><ul>
+<li>Define o widget **AdultoFinalPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageAdulto/Adultonpage.dart</h3><ul>
+<li>Define o widget **AdultoPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageAdulto/widgetAdulto.dart</h3><ul>
+<li>Define o widget **WidgetAdulto**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageAdulto/widgetAdultoFinal.dart</h3><ul>
+<li>Define o widget **WidgetAdultoFinal**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/pages/PageMenor/MenorFinalpage.dart</h3><ul>
+<li>Define o widget **MenorFinalpage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageMenor/Menorpage.dart</h3><ul>
+<li>Define o widget **MenorPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/PageMenor/widgetMenor.dart</h3><ul>
+<li>Define o widget **WidgetMenor**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/pages/PageMenor/widgetMenorFinal.dart</h3><ul>
+<li>Define o widget **widgetMenorFinal**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/perguntas/perguntasPage.dart</h3><ul>
+<li>Define o widget **PerguntasPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/perguntas/widgetPerguntas.dart</h3><ul>
+<li>Define o widget **Perguntaswidget**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Define o widget **CustomButton**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/pages/resultado/resultadoPage.dart</h3><ul>
+<li>Define o widget **ResultadoPage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/pages/resultado/resultadoTeleOncoPage.dart</h3><ul>
+<li>Define o widget **ResultadoTeleOncoPage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/pages/selectPage/selectPage.dart</h3><ul>
+<li>Define o widget **SelectPage**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+</ul>
+<h3>lib/pages/selectPage/widgetSelect.dart</h3><ul>
+<li>Define o widget **WidgetSelect**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+<li>Define o widget **CustomButton**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Gerencia **navegação entre telas** usando rotas nomeadas do Flutter.</li>
+</ul>
+<h3>lib/tools/cep.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/tools/pdfservicer.dart</h3><ul>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/tools/theme.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/tools/userverification.dart</h3><ul>
+<li>Define o widget **VerifyEmailPage**, do tipo StatefulWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/tools/viacep.dart</h3><ul>
+<li>Realiza chamadas HTTP para consumo de **APIs externas**.</li>
+</ul>
+<h3>lib/tools/auth/authCheck.dart</h3><ul>
+<li>Define o widget **AuthCheck**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+<li>Utiliza **StreamBuilder** para exibir dados em tempo real de streams (ex.: Firebase, sockets).</li>
+</ul>
+<h3>lib/tools/auth/auth_service.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+<h3>lib/tools/size/sizeResponsive.dart</h3><ul>
+<li>Define o widget **Responsive**, do tipo StatelessWidget, responsável por uma parte da interface.</li>
+</ul>
+<h3>lib/tools/size/sizescreen.dart</h3><ul>
+<li>Arquivo com definições auxiliares ou componentes de interface.</li>
+</ul>
+</section>
+<section><h2>Arquitetura e Funcionamento</h2><p>Com base na análise dos arquivos:</p><ul>
+<li>📍 O aplicativo inicia a partir de <code>main.dart</code>, onde a função <code>main()</code> configura e executa a aplicação Flutter.</li>
+<li>🖼️ As telas principais são implementadas como classes que estendem <code>StatelessWidget</code> ou <code>StatefulWidget</code>, cada uma representando uma parte da interface.</li>
+<li>🔄 A navegação entre telas é feita através do <code>Navigator</code> com rotas nomeadas.</li>
+<li>⏳ Recursos como <code>FutureBuilder</code> e <code>StreamBuilder</code> são utilizados para lidar com dados assíncronos (chamadas de API ou streams em tempo real).</li>
+<li>🌐 Dependendo do código, o projeto pode consumir APIs externas via pacote <code>http</code>.</li>
+<li>💾 Para persistência local simples, é usado <code>SharedPreferences</code>.</li>
+</ul></section>
+<section><h2>Observações Finais</h2><p>Essa documentação foi gerada automaticamente e descreve as funções e responsabilidades de cada parte do projeto. Para documentação mais detalhada, recomenda-se complementar com explicações específicas de regras de negócio e integrações externas.</p></section>
+</body></html>

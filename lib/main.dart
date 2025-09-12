@@ -32,6 +32,18 @@ class ProjectHubPage extends StatelessWidget {
       icon: Icons.assignment,
     ),
     Project(
+      name: 'Documentação App Triagem',
+      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
+
+      icon: Icons.assignment,
+    ),
+    Project(
+      name: 'Documentação Teleoncoped',
+      url: 'https://projetosici.github.io/Documentacao-App-Registro/',
+
+      icon: Icons.assignment,
+    ),
+    Project(
       name: 'Dash Satisfação ICI',
       url: 'https://dashinterativopy-4kmtzubfe3mgiecgd6xfum.streamlit.app/',
 
