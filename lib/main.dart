@@ -40,7 +40,7 @@ class ProjectHubPage extends StatelessWidget {
     Project(name: 'Documentação Teleoncoped', url: '', icon: Icons.assignment),
     Project(
       name: 'Dash Satisfação ICI',
-      url: 'https://dashinterativopy-4kmtzubfe3mgiecgd6xfum.streamlit.app/',
+      url: 'https://dashinterativoici.streamlit.app/',
 
       icon: Icons.insert_chart,
     ),
